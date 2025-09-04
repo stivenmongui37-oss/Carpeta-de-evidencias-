@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+<header class="hero">
+    <div class="hero-content">
+        <h1> Mi empresa de servicio</h1>
+        <p>Solicita una cotizacion para tu proximo proyecto </p>
+        </div>
+
+</header> 
+
+<nav>
+    <a href="#Precio">Precio</a>
+    <a href="#Formulario">Formulario</a>
+    <a href="#Contacto">Contacto</a>   
+</nav>
+ 
+ <div class="container">
+    <main>
+        <section id="Precio">
+            <h2>Tabla de precios</h2>
+            <table>
+
+                <tr>
+    
+                    <th>Servicio</th>
+    
+                    <th>Descripcion</th>
+     
+                    <th>Precio</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>Diseño Web</td>
+
+                    <td>Diseño  de sitios web personalizados</td>
+
+                    <td>$1.000.000</td>  
+
+                </tr>
+
+                <tr>
+                    <td>Desarrollo  web </td>
+
+                    <td>Desarrollo de aplicaciones web a medida</td>
+
+                    <td>$2.000.000</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Marketing Digital</td>
+
+                    <td>Estrategias de marketing en redes sociales</td>
+
+                    <td>$700.000</td>
+
+            </table>
+         </section>
+
+        <section id="Formulario">
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                 <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="email">Fecha:</label>
+                <input type="date" id="Fecha" name="Fecha" required>
+
+            </fieldset>
+                <fieldset>
+                    <legend>Informacion de Ubicacion</legend>
+                <label for="Departamento">Departamento:</label>
+                <select name="Departamento" id="Departamento"> Selecione su Departamento
+                <option value="">Selecione un Departamento</option>
+                <option value="Antioquia">Antioquia</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Valle del Cauca">Valle del Cauca</option>
+                <option value="Bogota D.C">Bogota D.C</option>
+                <option value="Tolima">Tolima</option>
+                <option value="Santander">Santander</option>
+                <option value="Bolivar">Bolivar</option>
+                <option value="Risaralda">Risaralda</option>
+                <option value="Nariño">Nariño</option>
+                <option value="Caldas">Caldas</option>
+                <option value="Huila">Huila</option>
+                <option value="Cesar">Cesar</option>
+                <option value="Cauca">Cauca</option>
+                <option value="Meta">Meta</option>
+                <option value="Sucre">Sucre</option>
+                <option value="Arauca">Arauca</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="La Guajira">La Guajira</option>
+                <option value="Magdalena">Magdalena</option>
+                <option value="Quindio">Quindio</option>
+                <option value="Boyaca">Boyaca</option>
+                <option value="Casanare">Casanare</option>
+                <option value="Choco">Choco</option>
+                </select>
+
+                <label for="Ciudad">Ciudad:</label>
+                    <select name="Ciudad" id="Ciudad"> Selecione su Ciudad
+                      <option value="">Selecione una Ciudad</option>
+                      <option value="Medellin">Medellin</option>
+                      <option value="Bogota">Bogota</option>              
+                      <option value="Cali">Cali</option>
+                      <option value="Barranquilla">Barranquilla</option>
+                      <option value="Cartagena">Cartagena</option>
+                      <option value="Soledad">Soledad</option>
+                      <option value="Bucaramanga">Bucaramanga</option>
+                      <option value="Pereira">Pereira</option>
+                      <option value="Cucuta">Cucuta</option>
+                      <option value="Ibagué">Ibagué</option>
+                      <option value="Santa Marta">Santa Marta</option>
+                      <option value="Villavicencio">Villavicencio</option>
+                      <option value="Manizales">Manizales</option>
+                      <option value="Pasto">Pasto</option>
+                      <option value="Monteria">Monteria</option>
+                      <option value="Neiva">Neiva</option>
+                      <option value="Armenia">Armenia</option>
+                      <option value="Floridablanca">Floridablanca</option>
+                      <option value="Sincelejo">Sincelejo</option>
+                      <option value="Tunja">Tunja</option>
+                      <option value="Yopal">Yopal</option>
+                      <option value="Quibdo">Quibdo</option>
+                    </select>
+
+                    <label for="Direccion">Direccion:</label>
+                    <imput type="text" id="Direccion" name="Direccion" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del Servicio</legend>
+                <label for="Servicio">Servicio:</label>
+                <select name="Servicio" id="Servicio" required>
+                    <option value="">Seleccione un servicio</option>
+                    <option value="Diseño Web">Diseño Web</option>
+                    <option value="Desarrollo Web">Desarrollo Web</option>
+                    <option value="Marketing Digital">Marketing Digital</option>
+                </select>
+
+        <Label for="Descripcion"> Descripcion</Label>
+        <textarea name="Descripcion" id="Descripcion" rows="5" required></textarea>
+     </fieldset>
+
+        <button type="submit">Enviar</button>
+        </section>
+   </main>
+   <aside>
+    <h2> Nuestros Servicios</h2>
+     <div class="card">
+       <img src="img/Diseño web.jpg" alt="A web designer working on a computer, focused and smiling, surrounded by sketches and digital screens in a modern office setting.">
+       <div class="card_content"> 
+         <h3>Diseño Web</h3>
+         <p>Creacion de sitios web atractivos y funcionales</p>
+       </div>
+   </div>
+
+    <div class="card">
+     <img src="img/Desarrollo web.jpg" alt="A web developer coding on a laptop, deeply focused, with multiple monitors displaying code and development tools in a tech-savvy environment.">
+     <div class="card_content"> 
+        <h3>Desarrollo Web</h3>
+        <p>Desarrollo de aplicaciones web a medida</p>
+     </div>
+
+    </div>
+    <div class="card">
+     <img src="img/Marketing Digital.jpg" alt="A digital marketer analyzing social media metrics on a tablet, surrounded by charts and graphs, in a bright and modern workspace.">
+     <div class="card_content"> 
+        <h3>Marketing Digital</h3>
+        <p>Estrategias de marketing en redes sociales</p>
+     </div>
+
+   </aside>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Sobre nosotros</h4>
+            <p>Somos una empresa dedicada a ofrecer servicios de alta calidad en diseño web, desarrollo y marketing digital.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Email: Stivenmongui37@gmail.com </p>
+            <p>Teléfono: +57 314 361 7269</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MI empresa de servicios. Todos los derechos reservados. </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
