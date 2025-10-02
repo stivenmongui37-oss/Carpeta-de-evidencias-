@@ -1,0 +1,14 @@
+.img-s{
+background-image: url(https://dismerca.com/wp-content/uploads/sites/15/2024/03/las-mejores-motos-deportivas-para-comprar-en-colombia-.jpg);
+background-size: cover;
+background-position: center;  
+}
+
+.card {
+    transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.12);
+}

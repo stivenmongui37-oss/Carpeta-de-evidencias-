@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(78, 29, 255);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.caja1,
+.caja2,
+.caja3 {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+
+}
+
+
+/*Tablet*/
+@media (max-width: 768px){
+    body {
+        background-color: rgb(255, 29, 197);
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja1 {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        line-height: 100px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .caja2 {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        line-height: 100px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .caja3 {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        line-height: 100px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+/*Celular*/
+@media (max-width: 480px) {
+    body {
+        background-color: rgb(255, 0, 64);
+    }
+
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja1 {
+
+        background-color: rgb(255, 230, 0);
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        line-height: 100px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-right: 300px;
+
+    }
+
+    .caja2 {
+        background-color: rgb(41, 240, 100);
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        line-height: 100px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .caja3 {
+        background-color: rgb(15, 248, 248);
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        line-height: 100px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-left: 300px;
+
+    }
+}
