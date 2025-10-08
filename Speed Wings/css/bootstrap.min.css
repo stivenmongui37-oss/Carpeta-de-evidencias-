@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #2457C5;
+  --secondary-color: #FFC107;
+  --accent-color: #E63946;
+  --dark-bg: #0D1B3D;
+  --light-bg: #E5E5E5;
+  --text-color: #FFFFFF;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+}
+.btn-custom {
+  background-color: var(--secondary-color);
+  color: var(--dark-bg);
+  border: none;
+}
+.btn-custom:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* ==== Carrusel Speed Wings ==== */
+.carousel-item img {
+  width: 80% !important;             /* fuerza el ancho */
+  height: 70vh !important;           /* fuerza la altura */
+  object-fit: cover;
+  filter: brightness(0.85);
+  border-radius: 20px !important;    /* bordes redondeados */
+  border: 15px solid #FFC107 !important; /* borde dorado */
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  margin: 0 auto;                    /* centra horizontalmente */
+  display: block;                    /* asegura que el margen funcione */
+}
+
+
+  /* Centrado y color del texto dentro del carrusel */
+  .carousel-caption h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .carousel-caption p {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Ajuste responsive: para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 50vh; /* un poco más pequeño en celulares */
+    }
+
+    .carousel-caption h2 {
+      font-size: 1.6rem;
+    }
+
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+/* ==== Fin Carrusel Speed Wings ==== */

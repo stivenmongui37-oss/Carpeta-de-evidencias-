@@ -1,0 +1,121 @@
+/* Estilos globales de interacción */
+:root{
+  --trans-duration: 200ms;
+  --trans-ease: cubic-bezier(.2,.8,.2,1);
+}
+
+/* Respetar preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce){
+  *{transition: none !important; animation: none !important}
+}
+
+/* Efecto para imágenes dentro de tarjetas o galerías */
+.card-img-top{
+  transition: transform var(--trans-duration) var(--trans-ease), box-shadow var(--trans-duration) var(--trans-ease);
+  will-change: transform;
+}
+.card-img-top:hover{
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* Efecto para botones */
+.btn{
+  transition: transform var(--trans-duration) var(--trans-ease), box-shadow var(--trans-duration) var(--trans-ease);
+}
+.btn:hover, .btn:focus{
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Efecto suave para links del navbar */
+.nav-link{
+  transition: color var(--trans-duration) var(--trans-ease), transform var(--trans-duration) var(--trans-ease);
+}
+.nav-link:hover{
+  transform: translateY(-3px);
+  color: #ffc107 !important;
+}
+
+/* Hover para tarjetas completas */
+.card{
+  transition: transform var(--trans-duration) var(--trans-ease), box-shadow var(--trans-duration) var(--trans-ease);
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* Pequeña animación para imágenes de logo en nav */
+.navbar-brand img{
+  transition: transform var(--trans-duration) var(--trans-ease);
+}
+.navbar-brand img:hover{
+  transform: rotate(-8deg) scale(1.05);
+}
+
+/* Clase utilitaria para aplicar el efecto en elementos fuera de .card-img-top */
+.interactive{
+  transition: transform var(--trans-duration) var(--trans-ease), box-shadow var(--trans-duration) var(--trans-ease);
+}
+.interactive:hover{
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Estilos para botones de redes sociales en el header */
+.social-btn{
+  padding: .45rem .75rem;
+  border-radius: .5rem;
+  font-weight: 600;
+}
+.social-btn svg{flex-shrink:0}
+.social-btn:hover{transform: translateY(-4px) scale(1.02)
+}
+
+/* ==== Estilos para botones de redes sociales ==== */
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.btn-instagram:hover {
+  filter: brightness(1.2);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(221, 42, 123, 0.6);
+}
+
+.btn-tiktok {
+  background-color: #000;
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.btn-tiktok:hover {
+  background-color: #111;
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(0, 242, 234, 0.5);
+}
+
+.social-btn {
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+
+
+.social-btn:hover img {
+  transform: rotate(10deg) scale(1.1);
+}
